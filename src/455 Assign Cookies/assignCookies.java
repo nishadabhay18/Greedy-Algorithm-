@@ -1,11 +1,11 @@
 class assignCookies {
     // TC->O(m log(m) + n log(n)) SC->O(1)
     public int findContentChildren(int[] children, int[] cookie) {
-        int m=children.length, n=cookie.length;
+        int m = children.length, n = cookie.length;
         Arrays.sort(children); Arrays.sort(cookie);
-        int i=0;
-        for(int j=0;j<n && i<m;j++){
-            if(children[i]<=cookie[j]) i++;
+        int i = 0;
+        for(int j = 0; j<n && i<m; j++){
+            if(children[i] <= cookie[j]) i++;
         }
         return i;
     }
