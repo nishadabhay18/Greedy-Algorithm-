@@ -1,4 +1,5 @@
 class assignCookies {
+    // TC->O(m log(m) + n log(n)) SC->O(1)
     public int findContentChildren(int[] children, int[] cookie) {
         int m=children.length, n=cookie.length;
         Arrays.sort(children); Arrays.sort(cookie);
